@@ -1,0 +1,693 @@
+ Intra.42.fr
+
+Alt Gr + 4 --> virguilla
+
+Pwd
+
+man perlcheat
+
+Cd
+Cd..
+Ls -> ver carpetas
+Ls -l -> ver permisios
+	drwx--xr-x  2 jperez  2022_urduliz  68 Jun 27 12:20 test0
+	68 -> size of the file
+Mv ___(nombre viejo) ___(nombre nuevo) -> cambiar nombre a un archivo
+Mv ___(Archivo(s)) _____(dirección nueva) -> mover archivos
+
+Cp ___(archivo) ___(dirección a la que lo quieres copiar)
+
+Ls -l@ -> ver permisos especiales
+xattr -d _____(conflict) _____(nombre del archivo)
+
+Ls -a -> ver directorios ocultos
+Mkdir -> crear carpeta
+Rm -> eliminar archivo
+Rmdir -> eliminar carpeta
+Mv ___(nombre inicial) ____(nombre final) -> cambiar nombre a un archivo
+Chmod -> cambiar permisos (suma)
+	r (read) - 4
+	w (rite) - 2
+	x (execute) - 1
+
+	o(w)newer
+	gr(o)up
+	(o)there	
+
+Ln -s ____(dirección) ___(dirección y nombre del archivo nuevo) -> enlaces simbolico
+
+Echo -> devuelve lo q escribes
+___=___ -> para crear una variable
+Echo $___(nombre de la variable) -> para mostrar valor de una variable
+Cat -> para ver txt
+Cat -n --> muestras numeradas las lineas
+Cat -e -> muestra caracteres q no se pueden imprimir y saltos de linea
+Ctrl + d -> para salir | ctrl + c
+Touch -> crear un archivo
+Touch -t -> cambiar la fecha del fichero
+Touch -ht -> cambiar feca a enlace simbolico
+__=__ -> crear variable
+sh -> area sub-shell | Crea un sibterminal dentro de la terminal
+export ____(variable) -> exporta la variable q quieras a tu entorno | Solo accesible en el entorno y subentornos (subshell)
+Unset ___(variable) -> para eliminar la variable del entorno
+Env -> para ver el entorn
+
+Wc ___ -> hace un tratamiento al fichero q eligas txt
+Wc -l -> numero de lineas
+Wc -w -> numero de palabras
+Wc -c -> numero de caracteres
+Touch -> para buscar
+
+More ___ -> te enseña el contenido del txt
+Head -n n -> muestra las primeras n lineas
+Head -c n -> muestra los primeros n caracteres
+Tail -n n -> muestra las ultimas n lineas
+Tail -c n -> muestra los ultimas n caracteres
+Grep ___ __.txt -> muestra el contenido q contenga la palabra o frase que quieras
+Grep -v ___ __.txt -> muestra las lineas q no contenga lo que buscas
+Grep -I -Z para que no importe si es muyuscula o minúscula
+Cat batman.txt | green Joker | Muestra la cantidad de veces que aparece la palabra Joker en el texto
+
+__ | __ -> para enlazar comandos
+> -> redirije la salida estándar a un fichero 
+____ > ___ -> te guarda el resultado de comando en el fichero que establezcas
+____ 2> ___ -> te guarda el error del comando q hayas utilizado
+___ >> añade tu búsqueda al fichero
+
+Buscar ficheeros y dirtorios
+Find . -> todos los directorios y ficheros de tu carpeta (la dirección)
+Find . -name ___ -> te da ladirecion del fichero qq buscas
+Find . -maxdepth n -> establece uno profundidad n
+
+Bc -> para hacer operaciones (quit para salir)
+
+Diff __(archivo1) __(achivo2) -> busca las diferencias entre dos archivos [si no aparece nada son iguales] (Comparar archivos)
+Patch ____(archivo1) ____(archivo.diff) --> añade a el archivo1 las diferencias establecidas por el archivo.diff
+
+FT_USER -> registration el los datos del usuario que se han registrado en el ordenador
+Groups FFT_USER --> para ver los grupos en los ue eta el usuario registrado en el ordenador
+
+Tar -xf ____(nombre del archivo) -> descomprimir archivos
+
+Sed 's/__(lo que buscas)/____(por lo q quieres remplazar)/g' --> para remplazar todos las labras que busques
+
+Creando un archivo con nano le puedes poner cualquier nombre, por fuerzas al fichero a tener ese nombre
+
+Bash -> para ejecutar ficheros
+#!/bin/bash --> añádelos a los ficheros para que sean mas fáciles de ejecutar
+
+Rev --> invierte el orden de una cadena (string)
+
+
+Cmd + d --> división vertical
+
+Cmd + shift + d --> división horizontal
+
+Editar consola --> https://futurestud.io/tutorials/iterm-duplicate-a-tab-by-opening-a-new-tab-in-the-same-folder
+
+
+------------------------- GIT ----------------------------
+Ordenador --> Stage --> Commit --> Server
+
+git init -> inicializa git
+ls -a -> para ver si se a inicializado
+git status -> para ver el stado de los archivos
+git status -s -> mas informacion
+git add ___ -> añade el archivo q quieras a el Stage o añade los cambios
+	git add *__(extension) -> añade todos los archivos con esa extension
+	git add . ->añade todo
+git restore --staged ___ -> pasa el archivo de stage al ordenador
+git restore -> recuperar archivo eliminado o anterior / decartar cambios
+
+git commit -m "__(mensaje)" -> añade  los cambios al Commit
+al eliminar archivos tambien hay que commitearlo
+
+.gitignore
+git diff -> muestra los cambios q no estan en stage
+git diff --staged -> camios en etapa de staged
+git log --online -> historial
+Git log --pretty=online --> loísmo pero muestra todo el id
+Git log -n -> para ver las ultimas n linas
+
+git branch --> muestra la rama en la q estamos
+git checkout -b ___(numero del ticket q arreglar)(nombre de la rama)
+git checkout ___(nombre de larama) -> cambiar de rama
+git merge ___(nombre de la rama) -> convergir ramas a la rama main
+
+Git remote add origin
+Git push origin master
+
+
+
+
+------------------------------- TMUX -----------------------------------
+
+https://gist.github.com/MohamedAlaa/2961058
+https://arslan.io/2018/02/05/gpu-accelerated-terminal-alacritty/
+
+tmux kill-server --> eliminar todas las sesiones
+https://cutt.ly/YXuY0LP --> eliminr sesiones
+
+https://gist.github.com/MohamedAlaa/2961058 --> shortcuts
+
+
+
+------------------------------- VIM -----------------------------------
+
+https://www.arsys.es/blog/comandos-vim
+
+sifht + G --> ir abajo del documento
+G + G --> ir arriba del documento
+$ --> te lleva al final de la linea
+0 --> te lleva al inicio de l alinea
+
+4 + Sifht + G --> te lleva a la linea 4
+___(numero) + % --> te lleva al % de docuemnto
+
+r + (letra) --> remplaza la letra sobre la que etsa el curso pao la que le digas
+
+~ --> pone en mayusucal e letra sobre la que esta el cursor
+
+H --> Izquierda
+J --> Abajo
+K --> Arriba
+L --> Derecha
+
+4J --> te mueve a la linea que esta 4 lineas mas abajo
+
+:q! --> salir sin guardar
+
+:x --> guarda y salir
+	ZZ (sin :) --> hace lo mismo
+
+i --> para 
+
+:set nu --> mostrar números de lineas
+:set nonu --> ocultar numero de lineas
+:help mouse
+	:set mouse=a --> para poder usar el curso
+
+:sp --> split horizontal
+:vsp --> split vertical
+	:vsp ____(nombre de fichero) --> para abrir fichero en un split
+
+:set splitright --> paraque las nuevas ventasn se abrar a la derecha
+
+:resize (number) --> acmbiar tamaño de ventana
+:resize +/-(number) --> añadir o quitar espacio ala ventana
+
+:buffers --> ver todas las ventanas (bufffer es una ventana)
+:ba --> enseña todos los baffers horizontalmente
+:vert ba --> enseña todos los buffers verticalmente
+:3ba --> enseña los tre primeros buffers 
+:vsp | b3 --> abre el buffer 3 en split vericala
+
+
+
+--------------Atajos de teclado------------
+
+Ctrl + w + s --> split horzontal
+Ctrl + w + v --> split vertical
+
+Ctrl + w + w --> sigueinte ventana
+Ctrl + w + p --> ventana anterior
+Ctrl + w + h --> izquierda
+Ctrl + w + j --> abajo
+Ctrl + w + k --> arriba
+Ctrl + w + l --> derecha
+
+Ctrl + w + x --> swap ventanas
+Ctrl + w + = --> Establece a todas las ventanas el mismo tamaño
+Ctrl + w + _ --> Maximiza la altura de la ventana
+Ctrl + w + | --> maximiza la hanchura de la ventana
+
+Ctrl + w + 0 --> ver solo es ventana
+
+yy --> copia la linea entera en la que estas situado
+	3 + Sifht + y --> copuia la liea del cursor y dos lineas mas abajo
+p --> pega la linea debajo del cursor
+Sifht + p --> pega la linea encima del cursor
+
+dd --> cortar linea
+Mayus + d --> corta la linea entera a partir de la posicion del cursor
+
+Mayus + c --> elimina la linea a partir del curosr y entra enn modo edicion
+MAyus + a --> se coloca al final de la linea y se pone en modo insertar
+
+d + w --> elimina solo la palabra en la que esta el cursor
+
+u --> undu the last change (como Ctrl + z)
+
+
+------------------------------- VScdode -----------------------------------
+
+Shift + Option + A --> comentar lineas seleccionadas
+
+
+
+
+------------------------------------- C ----------------------------------------
+
+Gcc ___(archivo.c) --> para ejecutar archivos.c | también te crea un archivo.out q puedes ejecutar
+El archivo.out te muestra los errores
+Norminitte
+
+Video 7 ? --> stac
+
+'\0' --> array vacuo
+
+Unsigned int ___(nombre) --> para decir que recibirá nuevos sin signo (el modulo)
+	Para declarar CONTADORES utilizado SIEMPRE
+
+Si haces "i=-1" --> luego en el bucle hay que hacer --> "++i" en vez de i++
+
+
+
+
+--------------Main------------
+
+int main(int argc, char *argv [])
+Argh --> el numero de parámetros q nos han pasado
+*argv[] --> array de punters0 (arrays)
+
+
+
+--------------Norminette------------
+
+Añade '0' para convertir una int en char --> (n + '0')
+
+Para enlazar funciones sin #include "reader.h" --> gcc ____(archivo1.c) _____(archivo2.c)
+
+
+
+---------write----------
+
+#include <unistd.h>
+https://es.stackoverflow.com/questions/514767/c-usar-write-para-imprimir-un-int
+https://linuxhint.com/use-write-system-call-c/ --> Peoria
+write(1, &c, 1);
+
+
+
+---------case----------
+
+swich(variable){
+	case __(condición 1): ___(lo que quieres q ejecute)
+	case __(condición ...n): ______
+	brake (optional)
+	default: _____(lo q hace por defecto)
+}
+
+Si se da una de las condiciones "case" ejecutara esa condición y todas las posteriores
+Para que no pase es utiliza "break" en cada case
+
+
+
+---------operadores ternarios----------
+
+Operadores ternarios (es como un if else) --> b= a== 42 ? 12 : 13 --> if(a==42){b=12;} else{b=13;}
+Si no pones la "b" del principio aplica e cambio a la unica variable --> a== 42 ? 12 : 13 --> if(a==42){a=12;} else{a=13;}
+
+Operadores ternarios dobles (es como un if con dentro otro if) --> b= a== 42 ? (a> 40 ? 11 : 12) : 13 --> if(a==42) { if(a>40){a=11} else{a=12} } else{b=13;}
+
+
+
+---------bucles----------
+
+Break --> para el bucle (i se para donde pongas el break)
+Continue --> reinicia el bucle (pone i=0)
+
+
+---------go to y labels---------
+
+Eso sirve para moverse entre distintas partes del código
+El label se crea con ":" --> ___(nombre del marcador): --> marcador1:
+Y para ir al marcador se utiliza "go to" --> go to marcador1
+Esto hara q el código empieza a ejecutarse desde donde colocaste el marcador1:
+
+
+
+---------punteros (ptr)----------
+Int *ptr(cualquier nombre y tipo de variable) --> para declarar variables q guarden direcciones --> Para crear un puntero
+Si quero un a direcionar de un tipo char debo de declarar un puntero tipo char
+
+Int **ptr --> para conseguir la dirección de un puntero
+
+Ptr = &a --> para guardar la dirección de una viriable
+
+*ptr = 87 --> Para reescribir el valor de una variable mediante su dirección 
+
+Las direcciones se guardan según el orden en enlace q se crean las variables, de arriba a abajo
+
+Int *function1() --> * hace referencia al tipo de retorno es decir devuelve la dirección 
+	https://cutt.ly/PK7lkDO --> ecplicacion
+
+Cuando declaras un array --> creas un puntero
+
+https://cutt.ly/MK50D9z --> strings --> explication de donde se guarda
+
+int *retrict ptr --> especifica al compilador que solo existe un puntero q hace referecnai a esa direccion 
+	the compiler is allowed to assume that ptrA, ptrB, and val point to different locations and updating the memory 		location referenced by one pointer will not affect the memory locations referenced by the other pointers
+
+Cuando pasas una fray como parámetro se pasa un puntero al primer valor, no el array entero
+
+Arrays and pointers are different types that are used in similar way
+Arrays are always passed to functioned by reference
+
+-----------static------------
+
+Hace que la variable a la q se le aplique el estático se únicamente utilizable en el fichero en el q se ha creado
+Restringe el uso de la variable o función fuera del archivo
+
+Util para cuando se utiliza redefinición de funciones y variables --> variables con el mismo nombre
+
+Static ____(variable) --> Variables
+	restringe el uso de la fvairbale del fichero
+	solo se podrá utilizar en las funciones que incluyen x en el mismo fichero --> esas funciones si las puedes exportar
+
+Static ____(funciones) --> Funciones
+
+
+	
+-----------const------------
+
+
+Para decir q una variable no se puede modificar
+
+Muy util para la utilización de punteros --> para evitar que se puede modificar con punteros
+
+Const int * const Tab --> para hacer que ele puntero también sea constante
+
+
+
+-----------malloc------------
+
+memory allocation
+#include<stdlib.h>
+
+https://www.youtube.com/watch?v=MtRV51dCwCc --> explication de malloc free y memoria
+(Int*)malloc(4) --> hay q caster lo q regresa el malloc --> malloc devolve una dirección void, porque no sabe para que tipo de variable
+Se va a registrar la memoria
+Al invocar malloc la sección registrada no esta inicializada con algún valor, pero puede contener el contenido de la ejecución de algunos otros programas
+Puede tener información basura
+Malloc no iniciativa los bloque de memoria q reservan
+https://cutt.ly/6LjDmHH --> explication 
+https://cutt.ly/eLnQfIs
+
+
+
+-----------free------------
+
+
+
+
+
+
+-----------recursividad------------
+
+La recursividad se basa en en contra un caso base y una vez se cumple ese caso base ese parámetro se va enviado hacia atrás,
+Rellenandi los huecos en los q faltaba información;
+
+Haz los dibujos de las cajas
+
+https://www.youtube.com/watch?v=i9roxX8z7tk
+
+
+
+-----------preprocesador------------
+
+Ggc - c ___(ficheros) --> crea ficheros .o .objeto --> fichero binario ya compilado
+
+
+
+#include --> añadir archivos
+	#include <stdio.h> --> busca el fichero en las directivas de base del compilador
+	#inlcude "fichero.c" --> busca en el directorio actual o Eunices 
+#define --> definir sustituciones
+	#define LIMITE 100
+Macro --> suspicion parametrizada utilizando #define
+	#define AREA_RECTANGULO (x, y) (x * y)
+#undef --> quitar la definición de algo
+#error --> cuando el preprocesador se encuentra con error lanza un error
+	#error "no compiles esto"
+Fuerzar al compilador a dar error en ciertas situaciones
+#if --> si no se cumple el program no se compila
+#elif
+#else
+#endif --> para decidir hasta donde se cumpla la condición de if
+Para decir que parte del program se compila
+#ifdef (_____)(nombre variable "define") --> si una variable esta definida
+#ifndef (___) --> si una variable no. esta definida
+
+
+-----------estructuras de datos------------
+
+
+Typedef --> crear tipos de variables
+	typedef int *int_p
+	int_p a
+	renombre tipos de datos
+
+Struct --> apra crear estructuras
+	struct s_point
+	{
+		int x;
+		int y;
+	};
+Si una función recibe como parámetro un puntero de una estructura para acceder a sus variables hay dos maneras
+	(*c).nombre
+	c->nombre 
+
+	struct s_point tab[3];
+Typedef struct s_point --> para declarer el tipo de variable
+	s_point tab[3]
+
+
+Enum --> obligatoriamente integrer
+El valor de cada variable se aumenta uno au uno
+Puedes darles valores
+Para construir un conjunto de identificadores
+Enum e_list
+{
+	val1 = 5,
+	val2,
+	val3,
+	val4,
+};
+
+
+Union --> estructuras que comparten la misma dirección de memoria
+	los bits que haya dentro del contenido de las variables q crees van a ser los mismo por ue están en
+	la misma posición de memoria
+	es como tener dos punteros apuntando a la misma posición
+	podemos acceder al mismo contenido de memoria de varias formas distintas
+
+	para trasnformar variables
+
+Union mi_union_t {
+	int entero;
+	float flotante; 
+};
+
+
+-----------open------------
+
+
+Int open("___(Dirección)", ____(modo de acceso))
+Int open(const char *pathname, int flags)
+	O_RONLY --> lectura 
+	O_WRONLLY --> escribir
+	O_CREATE, S_IRUSR | S_IWUSR --> crear si no exi ste
+Devuelve un tipo int (descriptor) --> es el numero que usas el sistema operativo para realiza un seguimiento de los archivos abiertos
+Cada archivo abierto tiene un numero (descriptor)
+
+
+
+-----------read------------
+
+# include <fcntl.h>
+read(____(archive a leer), ____(buffer, array para guarda la información), ____(numero Maxim para leer del fichero));
+ssize_t read(int fd, void *buf, size_t count)
+
+
+
+
+-----------close------------
+
+close(___(nombre del archivo)) --> hay que crear siempre el archivo una vez leído
+Int close(int fd)
+
+
+
+-----------Funciones variadicas------------
+
+Function que recibe una cantidad de parámetros indefinida, como printf
+
+Function_name(variable1, ...)
+
+va_list <variable_name> --> para declarar
+
+va_start(<variable_name>, <fucntion_last_parameter>) --> para inicializar
+	como segundo parámetro hay que dar la ultima variable de la función/protoyipo, porque de esta manera recibe
+	su dirección y así la variable va_list podrá acceder a las siguiente variables introducidas
+	Es como enviarle la primera dirección de un array, pero en este caso le enviamos la primera dirección de una
+	lista de variables itroducidas a la función
+
+Value = va_arg(<variable_name>, <variable_type>) --> (para obtener los parámetros), para asignar poder asignar, modifica, manejar los valores introducidos
+	Cada vez que se utilice, el 'array' se desplazara un poción hacia adelante.
+	Es como ir avanzando un puntero, pero no puedes elegir la posición que tu quieras, como en un array
+
+va_end(<variable_name>) --> para finalizar el proceso
+
+
+
+
+-----------static (variable estatica)------------
+
+
+
+
+
+
+-----------File descripto------------
+
+     
+
+
+
+
+
+------------------------------- MAKE -----------------------------------
+
+
+Para compilar archivos
+
+Objetivo: dependencias
+	instruccionesi$MAke. 
+
+Objetivo --> q queremos hacer
+Dependencias --> archivos que son necesarios q exista antes de que se pueda procesar este objetivo
+Instruccones --> instructions de código q se tienen que ejecutar (Shell)
+	Si pones @ antes de una instrucción, este no se muestra en pantalla
+
+El primer objetivo se ejecuta al ejecutar "make"
+
+# --> para comentarios
+
+Clean:	
+	rm -f program *.0 --> Regla ficticia que elimina los archivos .o
+
+Puedes hacer un objetivos con varios objetivos como dependencias para que ejecute varios objetivos a lavez
+
+
+-----------Variables------------
+
+
+Para no tener que llamar a los mismos archivos una y otra vez
+
+OBJS = main.o calculator.o salida.o
+ $(OBS) --> para usarla
+
+Vriables de expansion recursiva --> en la variable se amacena la referencia a la otra variable --> se actualiza si campias la variabel o variables que utilise
+
+Variables de expansion simple --> y := Adios
+	no se actualiza
+
+------------Recopilando Dependencias-----------
+
+Cuando se ejecuta make, y esta bien hecho so lo recopila las dependería que se hayan modificado y luegogo compila le prohrama
+Esto lo hacemiranod las fechas de modificación
+
+
+
+------------Patrones y variables automáticas-----------
+
+%.o --> cualquier archivo termine en .o
+$@ --> el nombre del objetivo
+$< --> hace referencia al primer requisito de las dependencias, la primera dependencia
+$? --> hace referencia a todas las dependencias
+
+
+
+
+------------------------------------- ENLACES -------------------------------------
+https://ayudalinux.com/comando-chmod-que-es-como-usarlo/
+https://www.youtube.com/watch?v=FbaF8c197-U --> Redirecciones
+https://linuxhint.com/what-does-ls-l-command-do-in-linux/ --> ls -l
+https://eltallerdelbit.com/ls-linux/ --> ls -l
+https://borrowbits.com/2013/04/borrar-directorio-no-vacio-en-linux/ --> eliminar carpetas
+https://docs.oracle.com/cd/E19620-01/805-7644/x-5lbaf/index.html
+https://www.youtube.com/watch?v=kYonC93SvpE --> hard y soft links
+https://rm-rf.es/diferencias-entre-soft-symbolic-y-hard-links/
+https://www.youtube.com/watch?v=G69dfwG2DJ4 --> SSH | Github
+https://www.ssh.com/academy/ssh/keygen --> explication de creation de clave ssh
+https://desarrolloweb.com/articulos/git-log.html --> git log
+https://acortar.link/3QgzMy --> git log Grafico
+https://www.ionos.es/digitalguide/servidores/configuracion/comando-linux-find/
+ --> find
+ https://www.hostinger.es/tutoriales/como-usar-comando-find-locate-en-linux/ --> find
+https://cutt.ly/HKGf17Z --> find
+https://cutt.ly/uKGibn1 --> buscar y eliminar archivos
+https://geekland.eu/uso-del-comando-sed-en-linux-y-unix-con-ejemplos/ --> SED -> Buscar y remplazar
+https://www.ionos.es/digitalguide/servidores/configuracion/comando-sed-de-linux/ --> TEORIA SED
+https://www.infor.uva.es/~mluisa/talf/docs/aula/A2.pdf --> SED
+https://es.wikipedia.org/wiki/Tr_(Unix)#:~:text=El%20comando%20tr%20permite%20al,a%20la%20hora%20de%20definirlos. --> tr | Buscar y Remplazar	
+https://geekland.eu/uso-del-comando-awk-en-linux-y-unix-con-ejemplos/ --> awk
+https://cutt.ly/RK7rqFf --> redefinicion de funciones y variables
+https://www.youtube.com/watch?v=YwRjEOFxvO0 --> Recursividad
+https://www.youtube.com/watch?v=1xKE62tTYj4 --> vim splits
+https://www.youtube.com/watch?v=nFl1cNXk85s&t=183s --> menmove y memcpy
+https://www.geeksforgeeks.org/write-memcpy/ --> memmove y memcpy
+https://cs50.stackexchange.com/questions/14615/memory-overlap-in-c --> Overlap
+https://www.youtube.com/watch?v=0rr66pZlQX4 --> new
+https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/ --> para cambair colores de ls (terminal)
+
+
+---------------------------------- Para ariketas ----------------------------------
+
+6 --> sacar las lineas pares del ls -l
+https://silveiraneto.net/2013/10/23/printing-only-odd-or-even-lines-using-sed/
+https://cutt.ly/2K8OXNu --> Invertir orden de array
+
+
+----------c02 ex10----------
+
+xhttps://www.generacodice.com/es/articolo/950697/mi-versi-n-de-strlcpy 
+https://github.com/Eywek/42-piscine/blob/master/day05/ex19/ft_strlcpy.c 
+https://www.freepascal.org/docs-html/rtl/strings/strlcopy.html
+https://git.42l.fr/frdescam/libft/src/branch/master/ft_strlcpy.c
+
+Strcpy --> copia lo q hay en src y lo pega en dest. Si no hay suficiente espacio en dest el ultimo dígito es un carácter entonces al inteetar keelro como no hay 0 o '\0' peta
+Strcpy --> copia lo quite hay en src hasta n y lo pega en dest --> si sobra espacio en dest lo rellena con 0
+Strlcpy --> copia lo q hay en src hasta n y lo pega en dest
+	si no hay espacio en dest en el ultimo carácter pone un '\0'
+	si lo copia todo en el ultimo carácter pone un '\0'
+
+
+
+----------c02 ex10----------
+
+Strcmp --> devuelve 0 si son iguales | devuelve un numero si son distintas
+
+https://www.aulafacil.com/cursos/programacion/lenguaje-de-programacion-c/funcion-strcmp-l17440
+https://www.aprendeaprogramar.com/referencia/view.php?f=strcmp&leng=c
+
+
+
+----------c03 ex04----------
+
+strstr --> duele la dirección del primer carácter de la cadena que buscas en la cadena en la q quieres usar
+	char1[] = "hola perro, quiero pan"
+	char2[] = "quiero"
+	strstr(char1, char2) --> me devuelve la dirección del primer carácter de la coindicdencia
+	me da la dirección del primer carácter de la palabra quiero en char1
+	y si lo guardamos y lo imprimirmos imprima todo a partir de la "q" de "quiero"
+
+
+----------c04 ex03----------
+
+Atoi --> convierte los primeros caracteres nuemroicos del storing en un int
+atoi(123) --> int = 123
+atoi(123.32) --> int = 123 
+'1' = 49 - '0' = 48 = 1
+Function pa contar de donde aa donde va el numero y otra pa imprimir
