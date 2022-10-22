@@ -4,3 +4,6 @@
 [submodule "level_01/get_next_line"]
 	path = level_01/get_next_line
 	url = https://github.com/otaola03/get_next_line
+[submodule "level_00/libft"]
+	path = level_00/libft
+	url = https://github.com/otaola03/libft
