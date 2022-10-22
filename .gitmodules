@@ -7,3 +7,6 @@
 [submodule "level_00/libft"]
 	path = level_00/libft
 	url = https://github.com/otaola03/libft
+[submodule "level_02/push_swap"]
+	path = level_02/push_swap
+	url = https://github.com/otaola03/push_swap
