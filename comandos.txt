@@ -137,6 +137,7 @@ git merge ___(nombre de la rama) -> convergir ramas a la rama main
 Git remote add origin
 Git push origin master
 
+git submodule add <url> UNED-II --> para nadir submodules | enlaces directos a otros repositorios
 
 
 
