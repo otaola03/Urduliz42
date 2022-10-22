@@ -1,3 +1,6 @@
 [submodule "level_01/ft_printf"]
 	path = level_01/ft_printf
 	url = https://github.com/otaola03/ft_printf
+[submodule "level_01/get_next_line"]
+	path = level_01/get_next_line
+	url = https://github.com/otaola03/get_next_line
