@@ -13,3 +13,6 @@
 [submodule "level_02/SoLong"]
 	path = level_02/SoLong
 	url = https://github.com/otaola03/SoLong
+[submodule "level_02/Pipex"]
+	path = level_02/Pipex
+	url = https://github.com/otaola03/Pipex2
